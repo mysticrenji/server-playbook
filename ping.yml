@@ -1,2 +1,5 @@
-- name: Example from an Ansible Playbook
-  ansible.builtin.ping:
+---
+- hosts: all
+  gather_facts: false
+  tasks:
+    - ping:
